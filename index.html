@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header">
+        <img id="header-img"  src="fantasma.png" alt="logo" loading="lazy">
+        <h1>Phasmotech</h1>
+        
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-link" ><a href="#description">Description</a></li>
+                <li class="nav-link"><a href="#video">Video</a></li>
+                <li class="nav-link"><a href="#prices">Prices</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section class="spiritbox">
+        <h2 class="h2-text">SpiritBox</h2>
+        <p id="description">The Spirit Box is a piece of equipment used to find Spirit Box evidence. It creates white noise by constantly cycling through various radio frequencies, which allows the ghost to communicate with you.</p>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/SuKH_pDyE_I?si=9WM3TzcHlwc9Iye4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <form id="form" actio="https://www.freecodecamp.com/email-submit" method="GET">
+        <label id="email-label">Get updated for more ghost tech:</label>
+        <input id="submit" id="email" type="email" placeholder="asd@dsa.com" >
+        <button class="button" id="submit" type="submit">Submit</button>
+
+    </form>
+
+    <section id="prices">
+        <div class="spiritbox-tier">
+            <img class="spiritbox-img" src="tier1.png" alt="tier1">
+
+            <h3>Tier 1</h3>
+            <p>An old FM/AM radio. It's small and compact, but the speaker isn't the best quality.</p>
+        </div>
+
+        <div class="spiritbox-tier">
+            <img class="spiritbox-img" src="tier2.png" alt="tier2">
+            <h3>Tier 2</h3>
+            <p>The P-SB7T Spirit Box is built solely for conversations with the unknown. The backlit screen helps investigations in the dark.</p>
+        </div>
+
+        <div  class="spiritbox-tier">
+            <img class="spiritbox-img" src="tier3.png" alt="tier3">
+            <h3>Tier 3</h3>
+            <p>The SB11-Z is a much larger Spirit Box, capable of scanning two frequency channels at the same time.</p>
+        </div>
+
+    </section>
+</body>
+</html>
+

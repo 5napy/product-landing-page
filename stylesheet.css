@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers child elements */
+}
+
+h1 {
+    position: absolute; /* Takes it out of the normal document flow */
+}
+
+#header-img {
+    margin-right: auto; /* Pushes logo to the left */
+    width: 4.5rem;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none; /* Removes the default bullets */
+    margin-left: auto; /* Pushes nav to the right */
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin-right: 15px;
+  }
+  
+  li {
+    display: inline; /* Makes list items inline */
+    margin-right: 20px; /* Adds space between items */
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover{
+    text-decoration: none;
+    color: grey;
+  }
+
+.spiritbox {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers all elements inside */
+  text-align: center;
+}
+
+.spiritbox h2 {
+  text-align: center; /* Horizontally centers the text */
+  width: 100%; /* Ensures the text spans the full width */
+  margin-bottom: 20px; /* Adds some space between the text and the video */
+}
+
+
+#video {
+  display: block; /* Ensures it behaves like a block element */
+  margin: 0 auto; /* Centers the video horizontally */
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally centers form elements */
+  width: 100%; /* Ensures the form takes full width */
+  max-width: 400px; /* Optional: limits form width */
+  margin: 0 auto; /* Centers the form itself */
+}
+
+#email-label,
+#email,
+#submit {
+  width: 100%; /* Makes form elements full width within the centered container */
+  max-width: 300px; /* Optional: limits input width */
+  margin-bottom: 10px; /* Adds space between form elements */
+  text-align: center;
+
+}
+#email-label {
+  display: block;
+  text-align: center; /* This will center the text horizontally */
+  width: 100%; /* Ensures the label spans the full width of its container */
+  margin-top: 20px;
+}
+#description{
+  padding-left: 25vh;
+  padding-right: 25vh;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  font-size: large;
+}
+
+#prices{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centers tiers horizontally */
+  align-items: stretch;
+}
+.spiritbox-tier{
+  display: flex;
+  width: 350px;
+  height: 450px;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  padding: 20px; /* Add some inner spacing */
+  border: 3px  solid black;
+  justify-content: space-around;
+  margin: 40px;
+}
+
+.spiritbox-img {
+  width: 200px; /* Fixed width instead of vh */
+  height: 250px; /* Add a fixed height */
+  object-fit: contain; /* Keeps image proportions */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.button{
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+#submit:hover{
+  background-color: gray;
+}
+
+.spiritbox-tier:hover{
+  position: relative;
+  width: 375px;
+  height: 475px;
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    flex-direction: column; /* Stacks items vertically */
+    text-align: center; /* Centers items */
+  }
+
+  #header-img {
+    margin-right: 0; /* Removes right margin */
+    margin-bottom: 10px; /* Adds space between logo and title */
+  }
+
+  h1 {
+    position: static; /* Removes absolute positioning */
+    margin-bottom: 10px; /* Adds space between title and nav */
+  }
+
+  ul {
+    margin-left: 0; /* Removes left margin */
+    justify-content: center; /* Centers nav items */
+  }
+
+  li {
+    margin: 0 10px; /* Adds space between nav items */
+  }
+}
